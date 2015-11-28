@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */ = {isa = PBXBuildFile; fileRef = F448105A1C0A5849008B68A6 /* UIRelated.m */; };
 		F4A03F621C00F43B00E792C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F611C00F43B00E792C8 /* main.m */; };
 		F4A03F651C00F43B00E792C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F641C00F43B00E792C8 /* AppDelegate.m */; };
 		F4A03F681C00F43B00E792C8 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F671C00F43B00E792C8 /* MasterViewController.m */; };
@@ -28,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F44810591C0A5849008B68A6 /* UIRelated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRelated.h; sourceTree = "<group>"; };
+		F448105A1C0A5849008B68A6 /* UIRelated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRelated.m; sourceTree = "<group>"; };
 		F4A03F5C1C00F43B00E792C8 /* WON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A03F601C00F43B00E792C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A03F611C00F43B00E792C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -84,6 +87,8 @@
 		F4A03F5E1C00F43B00E792C8 /* WON */ = {
 			isa = PBXGroup;
 			children = (
+				F44810591C0A5849008B68A6 /* UIRelated.h */,
+				F448105A1C0A5849008B68A6 /* UIRelated.m */,
 				F4A03F631C00F43B00E792C8 /* AppDelegate.h */,
 				F4A03F641C00F43B00E792C8 /* AppDelegate.m */,
 				F4A03F661C00F43B00E792C8 /* MasterViewController.h */,
@@ -227,6 +232,7 @@
 				F4A03F651C00F43B00E792C8 /* AppDelegate.m in Sources */,
 				F4A03F681C00F43B00E792C8 /* MasterViewController.m in Sources */,
 				F4A03F621C00F43B00E792C8 /* main.m in Sources */,
+				F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */,
 				F4A03F6B1C00F43B00E792C8 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -424,6 +430,7 @@
 				F4A03F841C00F43B00E792C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		F4A03F851C00F43B00E792C8 /* Build configuration list for PBXNativeTarget "WONTests" */ = {
 			isa = XCConfigurationList;
@@ -432,6 +439,7 @@
 				F4A03F871C00F43B00E792C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
