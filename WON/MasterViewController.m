@@ -8,7 +8,7 @@
 
 #import "MasterViewController.h"
 #import "DetailViewController.h"
-
+#import <Parse/Parse.h>
 @interface MasterViewController ()
 
 @property NSMutableArray *objects;
@@ -32,6 +32,10 @@
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
     self.detailViewController = (DetailViewController *)[[self.splitViewController.viewControllers lastObject] topViewController];
+    
+    PFObject *testObject = [PFObject objectWithClassName:@"TestObject"];
+    testObject[@"foo"] = @"bar";
+    [testObject saveInBackground];
 }
 
 - (void)didReceiveMemoryWarning {

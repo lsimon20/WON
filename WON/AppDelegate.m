@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Parse/Parse.h>
 #import "DetailViewController.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
@@ -22,6 +23,17 @@
     UINavigationController *navigationController = [splitViewController.viewControllers lastObject];
     navigationController.topViewController.navigationItem.leftBarButtonItem = splitViewController.displayModeButtonItem;
     splitViewController.delegate = self;
+    
+    // [Optional] Power your app with Local Datastore. For more info, go to
+    // https://parse.com/docs/ios_guide#localdatastore/iOS
+    [Parse enableLocalDatastore];
+    
+    // Initialize Parse.
+    [Parse setApplicationId:@"ARK8tsWibL1DaNaaqUt2d1VezSOlZvYSC9eOT9Rd"
+                  clientKey:@"FXZoam8prbSYv6xnrD00cvFrjY0qn9kvKE09Bpaj"];
+    
+    // [Optional] Track statistics around application opens.
+    [PFAnalytics trackAppOpenedWithLaunchOptions:launchOptions];
     return YES;
 }
 
