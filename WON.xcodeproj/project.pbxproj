@@ -10,9 +10,6 @@
 		F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */ = {isa = PBXBuildFile; fileRef = F448105A1C0A5849008B68A6 /* UIRelated.m */; };
 		F4A03F621C00F43B00E792C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F611C00F43B00E792C8 /* main.m */; };
 		F4A03F651C00F43B00E792C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F641C00F43B00E792C8 /* AppDelegate.m */; };
-		F4A03F681C00F43B00E792C8 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F671C00F43B00E792C8 /* MasterViewController.m */; };
-		F4A03F6B1C00F43B00E792C8 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F6A1C00F43B00E792C8 /* DetailViewController.m */; };
-		F4A03F6E1C00F43B00E792C8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4A03F6C1C00F43B00E792C8 /* Main.storyboard */; };
 		F4A03F701C00F43B00E792C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A03F6F1C00F43B00E792C8 /* Images.xcassets */; };
 		F4A03F731C00F43B00E792C8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4A03F711C00F43B00E792C8 /* LaunchScreen.xib */; };
 		F4A03F7F1C00F43B00E792C8 /* WONTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F7E1C00F43B00E792C8 /* WONTests.m */; };
@@ -33,6 +30,9 @@
 		F4A8B9AD1C0A72AE0078ABFA /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A8B9AC1C0A72AE0078ABFA /* libsqlite3.dylib */; };
 		F4A8B9AF1C0A72C10078ABFA /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A8B9AE1C0A72C10078ABFA /* Accounts.framework */; };
 		F4A8B9B11C0A72C80078ABFA /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F4A8B9B01C0A72C80078ABFA /* Social.framework */; };
+		F4EA47821C13AF3600CDD57C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA47811C13AF3600CDD57C /* Storyboard.storyboard */; };
+		F4EA47851C13B93100CDD57C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EA47841C13B93100CDD57C /* MainViewController.m */; };
+		F4EA47881C13BAFC00CDD57C /* topView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EA47871C13BAFC00CDD57C /* topView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,11 +53,6 @@
 		F4A03F611C00F43B00E792C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		F4A03F631C00F43B00E792C8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F4A03F641C00F43B00E792C8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F4A03F661C00F43B00E792C8 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		F4A03F671C00F43B00E792C8 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		F4A03F691C00F43B00E792C8 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		F4A03F6A1C00F43B00E792C8 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		F4A03F6D1C00F43B00E792C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F4A03F6F1C00F43B00E792C8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F4A03F721C00F43B00E792C8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		F4A03F781C00F43B00E792C8 /* WONTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WONTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -80,6 +75,11 @@
 		F4A8B9AC1C0A72AE0078ABFA /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F4A8B9AE1C0A72C10078ABFA /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
 		F4A8B9B01C0A72C80078ABFA /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
+		F4EA47811C13AF3600CDD57C /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		F4EA47831C13B93100CDD57C /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		F4EA47841C13B93100CDD57C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F4EA47861C13BAFC00CDD57C /* topView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topView.h; sourceTree = "<group>"; };
+		F4EA47871C13BAFC00CDD57C /* topView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,13 +151,13 @@
 			children = (
 				F44810591C0A5849008B68A6 /* UIRelated.h */,
 				F448105A1C0A5849008B68A6 /* UIRelated.m */,
+				F4EA47861C13BAFC00CDD57C /* topView.h */,
+				F4EA47871C13BAFC00CDD57C /* topView.m */,
+				F4EA47811C13AF3600CDD57C /* Storyboard.storyboard */,
 				F4A03F631C00F43B00E792C8 /* AppDelegate.h */,
 				F4A03F641C00F43B00E792C8 /* AppDelegate.m */,
-				F4A03F661C00F43B00E792C8 /* MasterViewController.h */,
-				F4A03F671C00F43B00E792C8 /* MasterViewController.m */,
-				F4A03F691C00F43B00E792C8 /* DetailViewController.h */,
-				F4A03F6A1C00F43B00E792C8 /* DetailViewController.m */,
-				F4A03F6C1C00F43B00E792C8 /* Main.storyboard */,
+				F4EA47831C13B93100CDD57C /* MainViewController.h */,
+				F4EA47841C13B93100CDD57C /* MainViewController.m */,
 				F4A03F6F1C00F43B00E792C8 /* Images.xcassets */,
 				F4A03F711C00F43B00E792C8 /* LaunchScreen.xib */,
 				F4A03F5F1C00F43B00E792C8 /* Supporting Files */,
@@ -277,9 +277,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F4A03F6E1C00F43B00E792C8 /* Main.storyboard in Resources */,
 				F4A03F731C00F43B00E792C8 /* LaunchScreen.xib in Resources */,
 				F4A03F701C00F43B00E792C8 /* Images.xcassets in Resources */,
+				F4EA47821C13AF3600CDD57C /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,10 +298,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A03F651C00F43B00E792C8 /* AppDelegate.m in Sources */,
-				F4A03F681C00F43B00E792C8 /* MasterViewController.m in Sources */,
+				F4EA47881C13BAFC00CDD57C /* topView.m in Sources */,
 				F4A03F621C00F43B00E792C8 /* main.m in Sources */,
+				F4EA47851C13B93100CDD57C /* MainViewController.m in Sources */,
 				F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */,
-				F4A03F6B1C00F43B00E792C8 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,14 +324,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		F4A03F6C1C00F43B00E792C8 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F4A03F6D1C00F43B00E792C8 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		F4A03F711C00F43B00E792C8 /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -436,6 +428,7 @@
 				INFOPLIST_FILE = WON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -450,6 +443,7 @@
 				INFOPLIST_FILE = WON/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
