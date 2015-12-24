@@ -17,10 +17,9 @@
     self.Perfil = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.Actividad = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.Crear = [UIButton buttonWithType:UIButtonTypeRoundedRect];
-    self.Perfil.frame = CGRectMake(self.bounds.size.width/12,self.bounds.size.width/10,self.bounds.size.width/12,self.bounds.size.width/12);
-    self.Actividad.frame= CGRectMake((self.bounds.size.width-self.bounds.size.width*3/12),self.bounds.size.width/10,self.bounds.size.width/12,self.bounds.size.width/12);
-    self.Crear.frame = CGRectMake((self.bounds.size.width-self.bounds.size.width*1.5
-                                   /12),self.bounds.size.width/10,self.bounds.size.width/12,self.bounds.size.width/12);
+    self.Perfil.frame = CGRectMake(self.bounds.size.width/16,self.bounds.size.width/10,self.bounds.size.width/16,self.bounds.size.width/16);
+    self.Actividad.frame= CGRectMake((self.bounds.size.width-self.bounds.size.width*3/16),self.bounds.size.width/10,self.bounds.size.width/16,self.bounds.size.width/16);
+    self.Crear.frame = CGRectMake((self.bounds.size.width-self.bounds.size.width*1.5/16),self.bounds.size.width/10,self.bounds.size.width/16,self.bounds.size.width/16);
     
     self.Perfil.layer.cornerRadius = self.Perfil.bounds.size.width/1.9;
     self.Actividad.layer.cornerRadius = self.Perfil.bounds.size.width/1.9;

@@ -33,6 +33,7 @@
 		F4EA47821C13AF3600CDD57C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA47811C13AF3600CDD57C /* Storyboard.storyboard */; };
 		F4EA47851C13B93100CDD57C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EA47841C13B93100CDD57C /* MainViewController.m */; };
 		F4EA47881C13BAFC00CDD57C /* topView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EA47871C13BAFC00CDD57C /* topView.m */; };
+		F4F8AB061C1511B10042869C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8AB051C1511B10042869C /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +81,8 @@
 		F4EA47841C13B93100CDD57C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F4EA47861C13BAFC00CDD57C /* topView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topView.h; sourceTree = "<group>"; };
 		F4EA47871C13BAFC00CDD57C /* topView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topView.m; sourceTree = "<group>"; };
+		F4F8AB041C1511B10042869C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		F4F8AB051C1511B10042869C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -153,6 +156,8 @@
 				F448105A1C0A5849008B68A6 /* UIRelated.m */,
 				F4EA47861C13BAFC00CDD57C /* topView.h */,
 				F4EA47871C13BAFC00CDD57C /* topView.m */,
+				F4F8AB041C1511B10042869C /* LoginViewController.h */,
+				F4F8AB051C1511B10042869C /* LoginViewController.m */,
 				F4EA47811C13AF3600CDD57C /* Storyboard.storyboard */,
 				F4A03F631C00F43B00E792C8 /* AppDelegate.h */,
 				F4A03F641C00F43B00E792C8 /* AppDelegate.m */,
@@ -241,7 +246,7 @@
 		F4A03F541C00F43B00E792C8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0630;
+				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "Simon L";
 				TargetAttributes = {
 					F4A03F5B1C00F43B00E792C8 = {
@@ -299,6 +304,7 @@
 			files = (
 				F4A03F651C00F43B00E792C8 /* AppDelegate.m in Sources */,
 				F4EA47881C13BAFC00CDD57C /* topView.m in Sources */,
+				F4F8AB061C1511B10042869C /* LoginViewController.m in Sources */,
 				F4A03F621C00F43B00E792C8 /* main.m in Sources */,
 				F4EA47851C13B93100CDD57C /* MainViewController.m in Sources */,
 				F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */,
