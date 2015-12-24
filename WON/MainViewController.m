@@ -25,6 +25,24 @@
     [self.view addSubview:self.tv];
 }
 
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 1;
+}
+
+
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+    if (cell == nil) {
+        
+        /*
+         *   Actually create a new cell (with an identifier so that it can be dequeued).
+         */
+        
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
+}
+    return cell;
+}
+
 -(void)viewDidAppear:(BOOL)animated{
     PFUser *currentUser = [PFUser currentUser];
     if (currentUser) {
@@ -33,7 +51,11 @@
         // show the signup or login screen
           NSLog(@"no user");
          [self performSegueWithIdentifier: @"Login" sender: self];
+        
     }
+}
+- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender{
+    
 }
 
 - (void)didReceiveMemoryWarning {

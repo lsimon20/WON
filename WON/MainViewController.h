@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "topView.h"
-@interface MainViewController : UIViewController
+@interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property topView *tv;
 

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */ = {isa = PBXBuildFile; fileRef = F448105A1C0A5849008B68A6 /* UIRelated.m */; };
+		F44A05A31C2C7D1300B6E1DF /* Actividad.m in Sources */ = {isa = PBXBuildFile; fileRef = F44A05A21C2C7D1300B6E1DF /* Actividad.m */; };
 		F4A03F621C00F43B00E792C8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F611C00F43B00E792C8 /* main.m */; };
 		F4A03F651C00F43B00E792C8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F4A03F641C00F43B00E792C8 /* AppDelegate.m */; };
 		F4A03F701C00F43B00E792C8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A03F6F1C00F43B00E792C8 /* Images.xcassets */; };
@@ -49,6 +50,8 @@
 /* Begin PBXFileReference section */
 		F44810591C0A5849008B68A6 /* UIRelated.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIRelated.h; sourceTree = "<group>"; };
 		F448105A1C0A5849008B68A6 /* UIRelated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIRelated.m; sourceTree = "<group>"; };
+		F44A05A11C2C7D1300B6E1DF /* Actividad.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Actividad.h; sourceTree = "<group>"; };
+		F44A05A21C2C7D1300B6E1DF /* Actividad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Actividad.m; sourceTree = "<group>"; };
 		F4A03F5C1C00F43B00E792C8 /* WON.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WON.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A03F601C00F43B00E792C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F4A03F611C00F43B00E792C8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -163,6 +166,8 @@
 				F4A03F641C00F43B00E792C8 /* AppDelegate.m */,
 				F4EA47831C13B93100CDD57C /* MainViewController.h */,
 				F4EA47841C13B93100CDD57C /* MainViewController.m */,
+				F44A05A11C2C7D1300B6E1DF /* Actividad.h */,
+				F44A05A21C2C7D1300B6E1DF /* Actividad.m */,
 				F4A03F6F1C00F43B00E792C8 /* Images.xcassets */,
 				F4A03F711C00F43B00E792C8 /* LaunchScreen.xib */,
 				F4A03F5F1C00F43B00E792C8 /* Supporting Files */,
@@ -305,6 +310,7 @@
 				F4A03F651C00F43B00E792C8 /* AppDelegate.m in Sources */,
 				F4EA47881C13BAFC00CDD57C /* topView.m in Sources */,
 				F4F8AB061C1511B10042869C /* LoginViewController.m in Sources */,
+				F44A05A31C2C7D1300B6E1DF /* Actividad.m in Sources */,
 				F4A03F621C00F43B00E792C8 /* main.m in Sources */,
 				F4EA47851C13B93100CDD57C /* MainViewController.m in Sources */,
 				F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */,

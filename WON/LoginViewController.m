@@ -41,6 +41,7 @@
     self.FBLogin = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.FBLogin.backgroundColor = UI.social;
     self.Login.backgroundColor = UI.naranja;
+    [self.Login setTitle:@"Login/Register" forState:UIControlStateNormal];
     self.Login.frame = CGRectMake(self.view.bounds.size.width/8, self.view.bounds.size.height*12.5/16, self.view.bounds.size.width*6/8, self.view.bounds.size.height/16);
     self.FBLogin.frame = CGRectMake(self.view.bounds.size.width/8, self.view.bounds.size.height*14/16, self.view.bounds.size.width*6/8, self.view.bounds.size.height/16);
     [self.Scroll addSubview:self.Username];
@@ -59,15 +60,14 @@
 }
 - (void)Loginorregister:(UITapGestureRecognizer*)sender{
     [self.Scroll setContentOffset:CGPointMake(0, 0) animated:YES];
-    
+    if([self.Username hasText]&&[self.Password hasText]){
     [PFUser logInWithUsernameInBackground:self.Username.text password:self.Password.text block:^(PFUser *user, NSError *error) {
         if (!error) {
-            
-            [self performSegueWithIdentifier:@"signIn" sender:nil];
+            [self dismissViewControllerAnimated:YES completion:nil];
         } else {
             // The login failed. Check error to see why.
             NSLog(@"%@",error);
-            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:(@"%@",error.description)                                                            message:@"do you want to register with this credentials"
+            UIAlertView *alert = [[UIAlertView alloc] initWithTitle:(@"Login Error")                                                            message:@"do you want to register with this credentials"
                                                            delegate:self
                                                   cancelButtonTitle:@"No"
                                                   otherButtonTitles:@"Yes", nil];
@@ -75,7 +75,7 @@
             
         }
     }];
-    
+    }
     [[self view] endEditing:YES];
 }
 -(void)alertView:(UIAlertView *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
@@ -87,12 +87,18 @@
         newUser.password = self.Password.text;
         [newUser signUp:&error];
         if(error){
-            NSLog(@"%@",error);
+            UIAlertView *alert2 = [[UIAlertView alloc] initWithTitle:(@"Register Error")                                                            message:@"the username you are trying to use is already taken"
+                                                           delegate:self
+                                                  cancelButtonTitle:@"No"
+                                                  otherButtonTitles:nil, nil];
+            [alert2 show];
         }
         else{
             if( [PFUser currentUser]!=nil){
                 NSLog(@"loged in");
+                [self dismissViewControllerAnimated:YES completion:nil];
             }
+            
         }
     }
 }
