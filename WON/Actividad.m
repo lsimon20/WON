@@ -20,13 +20,26 @@
     // Configure the view for the selected state
 }
 
-- (instancetype)initWithFrame:(CGRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        
-    }
-    return self;
+-(void)create{
+//    
+//    @property UILabel *Friends;
+//    @property UILabel *Title;
+//    @property UILabel *Allowance;
+//    @property UILabel *Creator;
+//    @property UILabel *lvl;
+//    @property UIImageView *Pic;
+//    @property UIButton *Asist;
+   
+    
 }
 
+- (void)layoutSubviews {
+    [super layoutSubviews];
+    
+    for (UIView *subview in self.contentView.superview.subviews) {
+        if ([NSStringFromClass(subview.class) hasSuffix:@"SeparatorView"]) {
+            subview.hidden = NO;
+        }
+    }
+}
 @end

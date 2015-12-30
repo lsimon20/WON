@@ -20,7 +20,7 @@
     
     self.Scroll = [[UIScrollView alloc]initWithFrame:self.view.bounds];
     self.Scroll.contentSize =CGSizeMake(self.view.bounds.size.width, self.view.bounds.size.height*2);
-    
+    [self.Scroll setScrollEnabled:NO];
     
     [self.view addSubview:self.Scroll];
     
@@ -38,6 +38,7 @@
     self.Username.backgroundColor = UI.gris;
     self.Password.backgroundColor = UI.gris;
     self.Login = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+    [self.Login setTitleColor:UI.fondo forState:UIControlStateNormal];
     self.FBLogin = [UIButton buttonWithType:UIButtonTypeRoundedRect];
     self.FBLogin.backgroundColor = UI.social;
     self.Login.backgroundColor = UI.naranja;
@@ -53,6 +54,8 @@
     self.Password.delegate = self;
     self.Scroll.delegate = self;
     UITapGestureRecognizer *Done = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(cerrar:)];
+    
+
     
     [self.Scroll addGestureRecognizer:Done];
     
@@ -114,8 +117,13 @@
 
 -(BOOL)textFieldShouldBeginEditing:(UITextField *)textField{
     //Has Focus
-    [self.Scroll setContentOffset:CGPointMake(0, textField.frame.origin.y-300) animated:YES];
+    [self.Scroll setContentOffset:CGPointMake(0, textField.frame.origin.y-textField.frame.size.height*2) animated:YES];
     return YES;
+}
+
+- (UIStatusBarStyle)preferredStatusBarStyle
+{
+    return UIStatusBarStyleLightContent;
 }
 
 /*

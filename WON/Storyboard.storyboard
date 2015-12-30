@@ -22,11 +22,30 @@
                     <connections>
                         <segue destination="8ap-eR-uHA" kind="presentation" identifier="Login" id="bV8-Yq-3bI"/>
                         <segue destination="gAG-uZ-cCq" kind="unwind" unwindAction="unwindToMainMenu:" id="bzj-Ae-Rab"/>
+                        <segue destination="eUu-X8-Tmt" kind="show" identifier="Crear" id="SG9-ch-5dd"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TCR-sj-Qib" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-450" y="743"/>
+        </scene>
+        <!--Activity View Controller-->
+        <scene sceneID="RRa-I0-IYI">
+            <objects>
+                <viewController id="eUu-X8-Tmt" customClass="ActivityViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="buG-Dn-WU0"/>
+                        <viewControllerLayoutGuide type="bottom" id="ipD-jX-euA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vYf-Vr-Yp6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gpd-oy-WzY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="368" y="752"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="CiL-Ch-8fp">

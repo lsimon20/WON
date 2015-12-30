@@ -21,6 +21,7 @@
         self.full = [UIColor colorWithRed:255/p green:56/p blue:56/p alpha:1];
         self.naranja = [UIColor colorWithRed:255/p green:74/p blue:60/p alpha:1];
         self.gris = [UIColor colorWithRed:204/p green:204/p blue:204/p alpha:1];
+        self.gris = [UIColor colorWithRed:204/p green:204/p blue:204/p alpha:1];
         self.fondo = [UIColor colorWithRed:51/p green:51/p blue:51/p alpha:1];
     return self;
 }

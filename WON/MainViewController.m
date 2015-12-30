@@ -7,6 +7,7 @@
 //
 
 #import "MainViewController.h"
+#import "Actividad.h"
 #import <Parse/Parse.h>
 @interface MainViewController ()
 
@@ -18,29 +19,38 @@
     [super viewDidLoad];
 
     self.navigationController.navigationBarHidden = YES;
-    NSLog(@"hello world %f",self.view.bounds.size.width/10);
-    
     
     self.tv = [[topView alloc]initWithFrame:CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height/8)];
+    self.TableView = [[UITableView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height/8, self.view.bounds.size.width, self.view.bounds.size.height*7/8) style:UITableViewStylePlain];
+    self.TableView.delegate =self;
+    self.TableView.dataSource = self;
     [self.view addSubview:self.tv];
+    [self.view addSubview:self.TableView];
+    [self.TableView reloadData];
+    
+    [self.tv.Crear addTarget:self
+               action:@selector(crear:)
+     forControlEvents:UIControlEventTouchUpInside];
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 1;
+    return 5;
 }
+
 
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
+    Actividad *cell = [tableView dequeueReusableCellWithIdentifier:@"MyIdentifier"];
     if (cell == nil) {
-        
-        /*
-         *   Actually create a new cell (with an identifier so that it can be dequeued).
-         */
-        
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:@"MyIdentifier"];
-}
+        cell = [[Actividad alloc] initWithStyle:UITableViewCellStyleDefault  reuseIdentifier:(@"cell")];
+        cell.frame = CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height*1.5/8);
+        [cell create];
+    }
     return cell;
+}
+
+-(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return self.view.bounds.size.height*3/16;
 }
 
 -(void)viewDidAppear:(BOOL)animated{
@@ -53,9 +63,6 @@
          [self performSegueWithIdentifier: @"Login" sender: self];
         
     }
-}
-- (IBAction)unwindToMainMenu:(UIStoryboardSegue*)sender{
-    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -79,5 +86,8 @@
     }
 }
 
+- (void)crear:(UITapGestureRecognizer*)sender{
+    [self performSegueWithIdentifier: @"Crear" sender: self];
+}
 
 @end

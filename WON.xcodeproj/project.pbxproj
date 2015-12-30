@@ -34,6 +34,7 @@
 		F4EA47821C13AF3600CDD57C /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4EA47811C13AF3600CDD57C /* Storyboard.storyboard */; };
 		F4EA47851C13B93100CDD57C /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EA47841C13B93100CDD57C /* MainViewController.m */; };
 		F4EA47881C13BAFC00CDD57C /* topView.m in Sources */ = {isa = PBXBuildFile; fileRef = F4EA47871C13BAFC00CDD57C /* topView.m */; };
+		F4F14C531C2D8F00004B4D03 /* ActivityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F14C521C2D8F00004B4D03 /* ActivityViewController.m */; };
 		F4F8AB061C1511B10042869C /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F4F8AB051C1511B10042869C /* LoginViewController.m */; };
 /* End PBXBuildFile section */
 
@@ -84,6 +85,8 @@
 		F4EA47841C13B93100CDD57C /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
 		F4EA47861C13BAFC00CDD57C /* topView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = topView.h; sourceTree = "<group>"; };
 		F4EA47871C13BAFC00CDD57C /* topView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = topView.m; sourceTree = "<group>"; };
+		F4F14C511C2D8F00004B4D03 /* ActivityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivityViewController.h; sourceTree = "<group>"; };
+		F4F14C521C2D8F00004B4D03 /* ActivityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivityViewController.m; sourceTree = "<group>"; };
 		F4F8AB041C1511B10042869C /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		F4F8AB051C1511B10042869C /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -162,6 +165,8 @@
 				F4F8AB041C1511B10042869C /* LoginViewController.h */,
 				F4F8AB051C1511B10042869C /* LoginViewController.m */,
 				F4EA47811C13AF3600CDD57C /* Storyboard.storyboard */,
+				F4F14C511C2D8F00004B4D03 /* ActivityViewController.h */,
+				F4F14C521C2D8F00004B4D03 /* ActivityViewController.m */,
 				F4A03F631C00F43B00E792C8 /* AppDelegate.h */,
 				F4A03F641C00F43B00E792C8 /* AppDelegate.m */,
 				F4EA47831C13B93100CDD57C /* MainViewController.h */,
@@ -314,6 +319,7 @@
 				F4A03F621C00F43B00E792C8 /* main.m in Sources */,
 				F4EA47851C13B93100CDD57C /* MainViewController.m in Sources */,
 				F448105B1C0A5849008B68A6 /* UIRelated.m in Sources */,
+				F4F14C531C2D8F00004B4D03 /* ActivityViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

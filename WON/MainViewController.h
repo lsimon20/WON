@@ -11,5 +11,6 @@
 @interface MainViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property topView *tv;
+@property UITableView *TableView;
 
 @end
