@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "UIRelated.h"
 @interface Actividad : UITableViewCell
 
 
@@ -18,6 +18,8 @@
 @property UILabel *lvl;
 @property UIImageView *Pic;
 @property UIButton *Asist;
+@property UIView *status;
+@property UIRelated *ui;
 
 
 -(void)create;
